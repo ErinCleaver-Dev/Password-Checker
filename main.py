@@ -1,6 +1,7 @@
 #https://haveibeenpwned.com/
-
+import sys
 #hackers use dictionary attacks
 import password_checker
 
-password_checker.check_password_exist_api('password1234')
+print(password_checker.check_passwords(sys.argv[1:]))
+
